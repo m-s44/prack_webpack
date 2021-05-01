@@ -43,10 +43,10 @@ module.exports = {
   },
   /*** ローカルサーバーの設定(webpack-dev-server) ***/
   devServer: {
-    // contentBase: "./",
+    contentBase: "public/",
     publicPath: "/build/js/",
     watchContentBase: true,
     open: true,
-    openPage: "public/",
+    // openPage: "public/",
   },
 };
