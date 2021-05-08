@@ -12,7 +12,8 @@ module.exports = {
   // エントリーポイント(解析する開始点となるファイル)
   entry: {
     main: "./src/js/app.js",
-    free: "./src/js/free.js"
+    free: "./src/js/free.js",
+    dom: "./src/js/dom.js",
   },
   /*** 出力の設定 ***/
   output: {
@@ -43,10 +44,10 @@ module.exports = {
   },
   /*** ローカルサーバーの設定(webpack-dev-server) ***/
   devServer: {
-    contentBase: "public/",
+    contentBase: "./",
     publicPath: "/build/js/",
     watchContentBase: true,
     open: true,
-    // openPage: "public/",
+    openPage: "public/",
   },
 };
